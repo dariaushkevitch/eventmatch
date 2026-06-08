@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.bodyy {
+    background: linear-gradient(180deg,#F6E2D4 30%, #E3C3A8 100% ); 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 270px;
+    height: 100vh;
+    background-color: #C1CDB4;
+    padding: 30px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 2;
+    overflow-y: auto;
+    box-sizing: border-box;
+
+}
+
+
+summary {
+    font-size: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    list-style: none; 
+}
+
+.container p {
+    font-size: 16px;
+    margin: 5px 0 5px 20px;
+    accent-color: black;
+    font-family: "Anonymous Pro";
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    margin-left: 250px; 
+    font-family: "Anonymous Pro";
+}
+
+.t-logo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 35px;
+    color:black;
+    -webkit-text-stroke: 0.2px #AFE2BA;
+    font-family:"Josefin Slab";
+    font-weight:500;
+    text-align:center;
+}
+
+.ii-text h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.ii-text p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.vvod {
+    position: fixed;
+    bottom: 20px;
+    left: 300px;      
+    width: 650px;      
+    height: 100px;     
+    background: linear-gradient(90deg, #EFEFEF 0%, #E2E2E2 48%, #D5D5D5 100%);
+    border: 1px solid #999;
+    display: flex;
+    z-index: 999;
+}
+
+
+.ii-vvod {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 15px 120px 15px 20px;
+    font-family: "Anonymous Pro", monospace;
+    font-size: 18px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+
+.button-vvod {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    z-index: 20;
+    background-color: #C1CDB4;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #888;
+    font-size: 14px;
+        font-family: "Anonymous Pro", monospace;
+}
+
+
+.creature {
+    position: fixed;
+    right: 30px;
+    z-index: 20;    
+    background-color: #C1CDB4;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #999;
+    font-size: 14px;
+        font-family: "Anonymous Pro", monospace;
+}
+@media screen and (max-width: 1250px) {
+    .container {
+        left: -240px;
+        z-index: 1001;
+    }
+    .container:hover {
+        left: 0;
+    }
+    .logo {
+        margin-left: 0 !important;
+        padding: 0 40px 0 60px !important; 
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .ii-text h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .ii-text p {
+        font-size: 16px; 
+        line-height: 1.4;
+    }
+
+    /* 3. Поле ввода (строчка) */
+    .vvod {
+        left: 70px !important; 
+        right: 50px !important; 
+        width: auto !important;
+        bottom: 120px;
+        height: 80px;         
+    }
+
+    .ii-vvod {
+        font-size: 16px;
+        padding: 10px 100px 10px 15px;
+    }
+
+    .creature {
+        left: 60px !important;
+        right: 40px !important;
+        bottom: 30px;
+        width: auto !important;
+        font-size: 13px;       
+        padding: 12px;
+        text-align: center;
+    }
+ 
+ 
+    .button-vvod {
+        padding: 6px 12px;
+        font-size: 12px;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .vvod {
+        right: 20px;    
+        bottom: 130px; 
+    }
+    
+    .creature {
+        bottom: 30px;
+        left: 50px;      
+        right: 20px;
+        width: auto;
+    }
+}

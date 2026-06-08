@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.bodyy {
+    background: linear-gradient(180deg,#F6E2D4 30%, #E3C3A8 100% ); 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container-regi {
+    background-color: #C1CDB4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 700px;
+    height: 510px;
+}
+.t-logo {
+    display: flex;
+    font-size: 38px;
+    color:black;
+    -webkit-text-stroke: 0.2px #AFE2BA;
+    font-family:"Josefin Slab";
+    font-weight:500;
+    text-align: left;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  .perexod {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.perexod a {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 28px;
+    text-decoration: none;
+}
+.active {
+    color: black;
+}
+.inactive {
+    color:#7B7676 ;
+}
+.inactive:hover {
+    color: black;
+
+}
+.toppi {
+    position: relative;
+    top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.button-regi {
+    display: flex;
+    width: 240px;
+    height: 50px;
+    font-family: "Anonymous Pro";
+    background: linear-gradient(90deg,#FFDCC9 0%, #D8A990 100% ); 
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    margin: 20px auto;
+    top: 35px;
+    position: relative;
+
+
+}
+.button-regi a {
+    text-decoration: none;
+    color: black;
+}
+
+.pol{
+    position: relative;
+    top: 20px;
+    accent-color: black;
+}
+.email-regi, .nick-regi, .password-regi  {
+position: relative;
+background:linear-gradient(90deg,#EFEFEF 0%, #E2E2E2 48%, #D5D5D5 100% ); 
+width: 100%;
+height: 50px;
+top: 20px;
+font-family: "Anonymous Pro";
+font-size: 18px;
+outline: none;
+}
+.container-vxod {
+    background-color: #C1CDB4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 700px;
+    height: 440px;
+}
+.email-vxod, .password-vxod {
+position: relative;
+background:linear-gradient(90deg,#EFEFEF 0%, #E2E2E2 48%, #D5D5D5 100% ); 
+width: 100%;
+height: 70px;
+top: 30px;
+font-family: "Anonymous Pro";
+font-size: 18px;
+outline: none;
+gap: 20px;
+}
+.vosst-pass {
+    position: relative;
+    font-size: 20px;
+    top: 20px;
+    left: 70%;
+    color: black;
+    text-decoration: none;
+}
+.button-vxod{
+    justify-content: center;
+    display: flex;
+    width: 180px;
+    height: 50px;
+    font-family: "Anonymous Pro";
+    background: linear-gradient(90deg,#FFDCC9 0%, #D8A990 100% ); 
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 20px auto;
+    top: 70px;
+    position: relative;
+    align-items: center;
+    padding: auto;
+
+}
+.button-vxod a {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+    @media screen and (max-width: 768px) {
+    .bodyy {
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+        padding: 20px;          
+    }
+
+    .container-regi, .container-vxod {
+        margin: 0 auto;       
+        left: 0;          
+        position: relative; 
+        box-sizing: border-box;
+        max-width: 320px; 
+        height: auto;    
+    }
+
+    .perexod {
+        justify-content: center; 
+        gap: 20px;
+    }
+
+    .perexod a {
+        font-size: 22px;  
+    }
+
+    .t-logo {
+        font-size: 30px;    
+    }
+        .vosst-pass {
+        left: 0;        
+        display: block;
+        text-align: right; 
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .button-vxod, .button-regi {
+        top: 20px;
+        margin: 0 auto;
+    }
+
+        .logo {
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 20px;
+    }
+
+    .t-logo {
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .bodyy {
+        box-sizing: border-box;
+        padding: 10px;   
+        align-items: flex-start; 
+        padding-top: 80px;  
+    }
+    .button-regi, .button-vxod {
+        width: 100%; 
+        position: relative;
+        align-items: center;
+
+
+
+    }
+}
