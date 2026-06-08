@@ -66,7 +66,7 @@
     width: 240px;
     height: 50px;
     font-family: "Anonymous Pro";
-    background: linear-gradient(90deg,#FFDCC9 0%, #D8A990 100% ); 
+    background: linear-gradient(90deg,#FFDCC9 0%, #D8A990 100% );
     border: none;
     font-size: 23px;
     cursor: pointer;
@@ -76,8 +76,7 @@
     top: 35px;
     position: relative;
     color: black !important;
-
-
+    -webkit-appearance: none;
 }
 .button-regi a {
     text-decoration: none;
@@ -142,6 +141,7 @@ gap: 20px;
     align-items: center;
     padding: auto;
     color: black !important;
+    -webkit-appearance: none;
 }
 .button-vxod a {
     display: flex;
@@ -189,6 +189,7 @@ gap: 20px;
             top: 20px;
             margin: 0 auto;
             color: black !important;
+            -webkit-appearance:none;
         }
 
         .logo {
@@ -217,5 +218,6 @@ gap: 20px;
         position: relative;
         align-items: center;
         color: black !important;
+        -webkit-appearance: none;
     }
 }
